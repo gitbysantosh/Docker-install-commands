@@ -1,0 +1,16 @@
+    1  sudo yum update -y
+    2  sudo yum install docker -y
+    3  sudo service docker start
+    4  sudo usermod -a -G docker ec2-user
+    5  docker info
+    6  ls
+    7  docker images
+    8  docker pull tomee
+    9  docker images
+   10  docker container ls
+   11  docker run --name webserver -p 7070:8080 -d tomee
+   12  docker container ls
+       ls
+   23  docker pull jenkins/jenkins
+   24  docker images
+   25  docker run -d --name devserver -p 5050:8080 jenkins/jenkins
