@@ -14,3 +14,8 @@
    23  docker pull jenkins/jenkins
    24  docker images
    25  docker run -d --name devserver -p 5050:8080 jenkins/jenkins
+       ls
+   26  docker pull nginx
+   28  docker run --name appserver -P -d nginx           (if image is not available, it perform pull operation automatically )
+                                                        (  Capital P  , will perform automatic port mapping  port:32768)
+
